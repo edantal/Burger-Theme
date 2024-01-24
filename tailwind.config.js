@@ -20,6 +20,15 @@ module.exports = {
         'theme-dark': '#000000',
         'theme-dark-light': '#171717',
       },
+      keyframes: {
+        swing: {
+          '0%, 100%': { transform: 'translateY(1rem)' },
+          '50%': { transform: 'translateY(-1rem)' },
+        },
+      },
+      animation: {
+        swing: 'swing 5s ease-in-out infinite',
+      },
     },
     container: {
       center: true,

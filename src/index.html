@@ -23,12 +23,15 @@
     <title>Responsive Burger Theme with TailwindCSS</title>
   </head>
   <body>
-    <!--~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~-->
+    <!--~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~-->
     <header class="bg-theme-primary fixed top-0 left-0 w-full z-50">
       <nav class="container relative h-14 flex justify-between items-center">
         <div>
           <a href="#" class="text-2xl uppercase font-oswald">
-            Bur<span class="text-theme-secondary">ger</span>
+            <span class="text-theme-secondary">Ham</span>bur<span
+              class="text-theme-secondary"
+              >ger</span
+            >
           </a>
         </div>
         <div
@@ -49,7 +52,7 @@
                 href="#about"
                 class="nav__link hover:text-theme-secondary ease-in duration-200"
               >
-                About us
+                Über Uns
               </a>
             </li>
             <li>
@@ -57,7 +60,7 @@
                 href="#menu"
                 class="nav__link hover:text-theme-secondary ease-in duration-200"
               >
-                Menu
+                Speisekarte
               </a>
             </li>
             <li>
@@ -65,7 +68,7 @@
                 href="#review"
                 class="nav__link hover:text-theme-secondary ease-in duration-200"
               >
-                Review
+                Rezension
               </a>
             </li>
             <li>
@@ -73,7 +76,7 @@
                 href="#contact"
                 class="nav__link hover:text-theme-secondary ease-in duration-200"
               >
-                Contact
+                Kontaktiere Uns
               </a>
             </li>
           </ul>
@@ -89,16 +92,66 @@
         <div class="flex items-center gap-5">
           <i class="ri-moon-line cursor-pointer ml-4 text-xl"></i>
 
-          <div id="mobile-menu-btn" class="md:hidden">
+          <div id="mobile-menu-btn" class="md:hidden`">
             <i class="ri-menu-2-line cursor-pointer text-xl"></i>
           </div>
         </div>
       </nav>
     </header>
 
-    <!--~~~~~~~~~~~~~~~ Main ~~~~~~~~~~~~~~~-->
+    <!--~~~~~~~~~~~~~~~ MAIN ~~~~~~~~~~~~~~~-->
     <main>
-      <!--~~~~~~~~~~~~~~~ Home ~~~~~~~~~~~~~~~-->
+      <!--~~~~~~~~~~~~~~~ // Home ~~~~~~~~~~~~~~~-->
+      <section id="home">
+        <div class="container flex flex-col items-center gap-10 md:flex-row">
+          <div class="mx-auto md:basis-1/2 lg:basis-2/5 animate-swing">
+            <img
+              src="./images/home-image.png"
+              alt="Hero main image"
+              class="w-60 md:w-full"
+            />
+          </div>
+
+          <div class="text-center md:basis-1/2 md:text-start lg:basis-3/5">
+            <h1 class="home__title">Glücklicher Bauch mit leckeren Burgern</h1>
+            <div class="separator mx-auto md:mx-0"></div>
+            <p class="paragraph">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
+              eum, quas in modi vitae tenetur voluptas cum quam illo quis
+              nequdolorem sit deleniti quibusdam cumque esse voluptates hic
+              molestiae ullam adipisci et nemo, minima ea ab.
+            </p>
+
+            <div
+              class="text-base flex items-center justify-center gap-4 py-10 md:justify-start md:gap-20"
+            >
+              <div class="text-center">
+                <i
+                  class="fa-solid fa-utensils text-theme-secondary text-4xl"
+                ></i>
+                <br />
+                Lecker
+              </div>
+              <div class="text-center">
+                <i
+                  class="fa-solid fa-droplet text-theme-secondary text-4xl"
+                ></i>
+                <br />
+                Frisch
+              </div>
+              <div class="text-center">
+                <i
+                  class="fa-brands fa-envira text-theme-secondary text-4xl"
+                ></i>
+                <br />
+                Bio
+              </div>
+            </div>
+
+            <a href="#" class="btn btn-primary text-theme-black">Learn more</a>
+          </div>
+        </div>
+      </section>
 
       <!--~~~~~~~~~~~~~~~ Category ~~~~~~~~~~~~~~~-->
 
@@ -113,7 +166,7 @@
       <!--~~~~~~~~~~~~~~~ Contact ~~~~~~~~~~~~~~~-->
     </main>
 
-    <!--~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~-->
+    <!--~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~-->
     <footer></footer>
 
     <!--~~~~~~~~~~~~~~~ Scroll Up ~~~~~~~~~~~~~~~-->
