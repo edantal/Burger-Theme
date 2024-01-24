@@ -26,7 +26,8 @@
 
 @layer utilities {
   .home__title,
-  .card__title {
+  .card__title,
+  .section__title {
     @apply text-4xl font-oswald font-bold uppercase lg:text-6xl;
   }
 
@@ -34,11 +35,15 @@
     @apply text-xl;
   }
 
+  .section__title {
+    @apply text-3xl;
+  }
+
   .separator {
     @apply w-28 h-[2px] bg-theme-secondary my-5;
   }
 
   .paragraph {
-    @apply text-theme-paragraph text-xs leading-5;
+    @apply text-theme-paragraph text-sm leading-5;
   }
 }
