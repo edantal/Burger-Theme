@@ -1,3 +1,4 @@
+/*~~~~~~~~~~~~~~~ TOGGLE BUTTON ~~~~~~~~~~~~~~~*/
 const mobileMenuBtn = document.querySelector('#mobile-menu-btn')
 const navMenu = document.querySelector('#nav-menu')
 const navCloseMenu = document.querySelector('#nav-close')
@@ -15,4 +16,17 @@ navCloseMenu.addEventListener('click', () => {
 
 mobileMenuBtn.addEventListener('click', () => {
   navMenu.classList.remove('hidden')
+})
+
+/*~~~~~~~~~~~~~~~ TABS ~~~~~~~~~~~~~~~*/
+const tabs = document.querySelectorAll('.tabs_wrap ul li')
+
+tabs.forEach((tab) => {
+  tab.addEventListener('click', () => {
+    tabs.forEach((tab) => {
+      tab.classList.remove('active')
+    })
+
+    tab.classList.add('active')
+  })
 })

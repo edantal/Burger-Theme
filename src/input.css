@@ -47,3 +47,8 @@
     @apply text-theme-paragraph text-sm leading-5;
   }
 }
+
+.tabs_wrap ul li:hover,
+.tabs_wrap ul li.active {
+  @apply bg-theme-secondary text-theme-black;
+}
