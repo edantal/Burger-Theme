@@ -1,6 +1,6 @@
 # Burger TaliwindCSS Theme
 
-Static Tailwind CSS Framework Theme - Burger
+Responsive Burger Theme with TailwindCSS
 
 <!--
 

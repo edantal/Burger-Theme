@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
   },
   "keywords": [],
-  "author": "",
+  "author": "edanTal",
   "license": "ISC",
   "devDependencies": {
     "tailwindcss": "^3.4.1"
