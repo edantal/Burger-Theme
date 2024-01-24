@@ -2,6 +2,11 @@
 module.exports = {
   content: ['./src/**/*.{html,js}'],
   theme: {
+    screens: {
+      sm: '480px',
+      md: '768px',
+      lg: '1024px',
+    },
     extend: {
       colors: {
         'theme-primary': '#010a5e',
@@ -22,6 +27,10 @@ module.exports = {
         DEFAULT: '1rem',
         sm: '1.5rem',
       },
+    },
+    fontFamily: {
+      oswald: ['oswald', 'sans-serif'],
+      dmsans: ['DM Sans', 'sans-serif'],
     },
   },
   plugins: [],
