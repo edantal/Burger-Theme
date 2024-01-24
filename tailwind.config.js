@@ -22,7 +22,6 @@ module.exports = {
       },
       keyframes: {
         swing: {
-          '0%, 100%': { transform: 'translateY(1rem)' },
           '50%': { transform: 'translateY(-1rem)' },
         },
       },
