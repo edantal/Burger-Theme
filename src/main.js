@@ -134,3 +134,31 @@ const activeLink = () => {
 }
 
 window.addEventListener('scroll', activeLink)
+
+/*~~~~~~~~~~~~~~~ Scroll Reveal Animation ~~~~~~~~~~~~~~~*/
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '60px',
+  duration: 2500,
+  delay: 400,
+})
+
+sr.reveal('.home__img')
+sr.reveal('.home__content', { origin: 'bottom' })
+
+sr.reveal('.category__card', { interval: 300 })
+
+sr.reveal('.promo__card-1', { origin: 'left' })
+sr.reveal('.promo__card-2', { origin: 'right' })
+
+sr.reveal('.about__img', { origin: 'bottom' })
+sr.reveal('.about__content', { origin: 'top' })
+
+const menuItems = document.querySelectorAll('.menu__items ul li')
+menuItems.forEach((item) => {
+  sr.reveal(item, { interval: 400 })
+})
+
+sr.reveal('.customer__reviews', { origin: 'right' })
+
+sr.reveal('.footer')

@@ -1,6 +1,6 @@
-# Burger TaliwindCSS Theme
+# Hamburger TaliwindCSS Theme
 
-Responsive Burger Theme with TailwindCSS
+Responsive Hamburger Theme with TailwindCSS
 
 ### Resources
 
@@ -11,6 +11,7 @@ Responsive Burger Theme with TailwindCSS
 - [Google Fonts: Nunito](https://fonts.google.com/specimen/Nunito)
 - [Google Fonts: DM Sans](https://fonts.google.com/specimen/DM+Sans)
 - [Swiper](https://swiperjs.com)
+- [ScrollReveal](https://scrollrevealjs.org)
 
 <!--
 
