@@ -1,4 +1,4 @@
-/*~~~~~~~~~~~~~~~ TOGGLE BUTTON ~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~ Mobile Toggle Button ~~~~~~~~~~~~~~~*/
 const mobileMenuBtn = document.querySelector('#mobile-menu-btn')
 const navMenu = document.querySelector('#nav-menu')
 const navCloseMenu = document.querySelector('#nav-close')
@@ -18,7 +18,7 @@ mobileMenuBtn.addEventListener('click', () => {
   navMenu.classList.remove('hidden')
 })
 
-/*~~~~~~~~~~~~~~~ TABS ~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~ Tabs ~~~~~~~~~~~~~~~*/
 const tabs = document.querySelectorAll('.tabs_wrap ul li')
 const all = document.querySelectorAll('.item_wrap')
 const foods = document.querySelectorAll('.food')
@@ -61,3 +61,29 @@ tabs.forEach((tab) => {
     }
   })
 })
+
+/*~~~~~~~~~~~~~~~ Scroll Up ~~~~~~~~~~~~~~~*/
+const scrollUp = () => {
+  const scrollUpBtn = document.querySelector('#scroll-up-btn')
+
+  if (this.scrollY >= 250) {
+    scrollUpBtn.classList.remove('-bottom-1/2')
+    scrollUpBtn.classList.add('bottom-4')
+  } else {
+    scrollUpBtn.classList.add('-bottom-1/2')
+    scrollUpBtn.classList.remove('bottom-4')
+  }
+}
+window.addEventListener('scroll', scrollUp)
+
+/*~~~~~~~~~~~~~~~ Change Header Background ~~~~~~~~~~~~~~~*/
+const scrollHeader = () => {
+  const header = document.querySelector('#header')
+
+  if (this.scrollY >= 50) {
+    header.classList.add('border-b', 'border-theme-secondary')
+  } else {
+    header.classList.remove('border-b', 'border-theme-secondary')
+  }
+}
+window.addEventListener('scroll', scrollHeader)
