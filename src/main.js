@@ -109,3 +109,28 @@ if (localStorage.getItem('themeMode') == 'dark') darkMode()
 themeToggleBtn.addEventListener('click', () => {
   darkMode(localStorage.getItem('themeMode') === 'dark')
 })
+
+/*~~~~~~~~~~~~~~~ Scroll Sections Activate Links ~~~~~~~~~~~~~~~*/
+const activeLink = () => {
+  const sections = document.querySelectorAll('section')
+  const navLinks = document.querySelectorAll('.nav__link')
+
+  let current = 'home'
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop
+
+    if (this.scrollY >= sectionTop - 60) {
+      current = section.getAttribute('id')
+    }
+  })
+
+  navLinks.forEach((item) => {
+    item.classList.remove('text-theme-secondary')
+    if (item.href.includes(current)) {
+      item.classList.add('text-theme-secondary')
+    }
+  })
+}
+
+window.addEventListener('scroll', activeLink)
