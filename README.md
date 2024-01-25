@@ -10,6 +10,7 @@ Responsive Burger Theme with TailwindCSS
 - [Google Fonts: Oswald](https://fonts.google.com/specimen/Oswald)
 - [Google Fonts: Nunito](https://fonts.google.com/specimen/Nunito)
 - [Google Fonts: DM Sans](https://fonts.google.com/specimen/DM+Sans)
+- [Swiper](https://swiperjs.com)
 
 <!--
 
