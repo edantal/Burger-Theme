@@ -87,3 +87,25 @@ const scrollHeader = () => {
   }
 }
 window.addEventListener('scroll', scrollHeader)
+
+/*~~~~~~~~~~~~~~~ Switch Dark/Light Themes ~~~~~~~~~~~~~~~*/
+const html = document.querySelector('html')
+const themeToggleBtn = document.querySelector('#theme-toggle-btn')
+
+const darkMode = (isDark) => {
+  if (isDark) {
+    html.classList.remove('dark')
+    themeToggleBtn.classList.replace('ri-sun-line', 'ri-moon-line')
+    localStorage.removeItem('themeMode')
+  } else {
+    html.classList.add('dark')
+    themeToggleBtn.classList.replace('ri-moon-line', 'ri-sun-line')
+    localStorage.setItem('themeMode', 'dark')
+  }
+}
+
+if (localStorage.getItem('themeMode') == 'dark') darkMode()
+
+themeToggleBtn.addEventListener('click', () => {
+  darkMode(localStorage.getItem('themeMode') === 'dark')
+})

@@ -10,7 +10,7 @@
   }
 
   body {
-    @apply text-theme-white bg-theme-primary tracking-wider font-dmsans;
+    @apply text-theme-white bg-theme-primary tracking-wider font-dmsans dark:bg-theme-dark;
   }
 
   section {
