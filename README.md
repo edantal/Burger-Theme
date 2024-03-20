@@ -13,6 +13,11 @@ Responsive Hamburger Theme with TailwindCSS
 - [Swiper](https://swiperjs.com)
 - [ScrollReveal](https://scrollrevealjs.org)
 
+### Preview
+
+[View Design](https://raw.githubusercontent.com/edantal/Theme-Hamburger--TailwindCSS/main/preview-%5Blight%5D.jpg)
+[View Design - Dark Mode](https://raw.githubusercontent.com/edantal/Theme-Hamburger--TailwindCSS/main/preview-%5Bdark%5D.jpg)
+
 <!--
 
 ---
