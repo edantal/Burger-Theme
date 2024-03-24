@@ -1,6 +1,11 @@
 # Hamburger TaliwindCSS Theme
 
-Responsive Hamburger Theme with TailwindCSS
+<div>
+  <div>
+    <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06b6d4" alt="tailwindcss" />
+  </div>
+  <h3>Responsive Hamburger Theme with TailwindCSS</h3>
+</div>
 
 ### Resources
 
